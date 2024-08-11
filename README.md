@@ -87,7 +87,7 @@ After installing the project and configuring the environment settings, follow th
 ### API Endpoints
 
   1. Fetch Data
-     -   **Endpoint:** `http://127.0.0.1:33169/fetch-data`
+     -   **Endpoint:** `http://127.0.0.1:5000/fetch-data`
      -   **Method:** GET
      -   **Description:** This endpoint triggers the process to fetch data from an external service. It distributes the tasks to subtasks using Python's multiprocessing library, processes the data, and stores it in the database.
      -   **Response:**
@@ -104,7 +104,7 @@ After installing the project and configuring the environment settings, follow th
           - **Storage Errors:** Errors that occur while storing data in the database will be logged, with the problematic data also saved in the `capture_data_error` folder.
 
   2. Get Processed Data
-      - **Endpoint:** `http://127.0.0.1:33169/get-processed-data`
+      - **Endpoint:** `http://127.0.0.1:5000/get-processed-data`
       - **Method:** GET
       - **Description:** This endpoint retrieves processed data from the database. By default, it returns the first 10 records.
       - **Parameters:**
@@ -141,10 +141,11 @@ After installing the project and configuring the environment settings, follow th
       }
     ```
   - Status Code: The default HTTP status code for errors is `500`.
-
 ---
 
 **Note :** In-memory storage was not used due to the need for persistent storage while employing the `multiprocessing` library. Data is stored persistently in the database to ensure that the system can manage and recover from processes effectively.
+
+Additionally, I am adding a Postman collection to the repository. Check it out for detailed API testing and examples.
         
 
       

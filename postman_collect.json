@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "238c488c-ae94-4b11-a1a7-72d7e30471f5",
+		"name": "Interview task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30748316"
+	},
+	"item": [
+		{
+			"name": "fetch-data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/fetch-data",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"fetch-data"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-processed-data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/get-processed-data?page_no=1&page_length=5",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get-processed-data"
+					],
+					"query": [
+						{
+							"key": "page_no",
+							"value": "1"
+						},
+						{
+							"key": "page_length",
+							"value": "5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
