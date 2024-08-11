@@ -91,6 +91,7 @@ After installing the project and configuring the environment settings, follow th
      -   **Method:** GET
      -   **Description:** This endpoint triggers the process to fetch data from an external service. It distributes the tasks to subtasks using Python's multiprocessing library, processes the data, and stores it in the database.
      -   **Response:**
+     
              ```json
               {
                 "message": "Process is started",
