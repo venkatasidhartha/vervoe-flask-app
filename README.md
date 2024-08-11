@@ -134,16 +134,17 @@ After installing the project and configuring the environment settings, follow th
   In the event of an error, the response will be:
 
     ```json
-    {
-      "message": "An unexpected error occurred",
-      "status": "red",
-      "trace": "Detailed error description"
-    }
+      {
+        "message": "An unexpected error occurred",
+        "status": "red",
+        "trace": "Detailed error description"
+      }
     ```
   - Status Code: The default HTTP status code for errors is `500`.
 
+---
 
-
+**Note :** In-memory storage was not used due to the need for persistent storage while employing the `multiprocessing` library. Data is stored persistently in the database to ensure that the system can manage and recover from processes effectively.
         
 
       
